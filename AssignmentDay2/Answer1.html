@@ -24,17 +24,30 @@
     </head>
 
     <body>
+        <p id="demo1"></p>
         <p id="demo"></p>
 
         <script>
 
-            var dateFormat = require('dateformat');
-
             var now = new Date();
+            var DayName =['Sunday','Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var ans= now.getDay();
+            document.getElementById("demo1").innerHTML = "Today is :" +" "+DayName[ans]+".";
+            var m='';
+            var hours=0;
+            if(now.getHours() < 12)
+            {
+                hours=now.getHours()==0?12:now.getHours();
+                m="AM";
+            }
+            else
+            {
+                hours=now.getHours-12;
+                m="PM";
+            }
+            document.getElementById("demo").innerHTML="Current time is : " + now.getHours()+ " " +m + " : " +now.getMinutes() +" : " + now.getSeconds();
 
-         
-        
-            document.getElementById("demo").innerHTML = "Today is :" + dateFormat(now, "dddd");
+
 
         </script>
 
