@@ -1,0 +1,40 @@
+<html>
+    <head>
+        
+        <h4>
+        
+        Question 2 : <br>
+        
+        Write a JavaScript program to get the current date.<br>
+        Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy<br>
+        <br>
+
+        
+        </h4    >
+
+        <h2>
+            Answer:
+        </h2>
+
+    </head>
+
+    <body>
+        <p id="demo1"></p>
+            <script>
+                var n = new Date();
+                var dd = n.getDate();
+                
+                if (dd<10)
+                    dd = "0"+dd;
+
+                var mm = n.getMonth();
+                var mm1 = ['01','02','03','04','05','06','07','08','09','10','11','12']
+                var yyyy =n.getFullYear();
+
+                document.getElementById("demo1").innerHTML=mm1[mm]+"-"+dd+"-"+yyyy+", "+mm1[mm]+"/"+dd+"/"+yyyy
+
+            </script>
+    </body>
+
+
+</html> 
