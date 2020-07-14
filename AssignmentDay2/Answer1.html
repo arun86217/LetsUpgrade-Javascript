@@ -1,0 +1,45 @@
+<html>
+    <head>
+        
+        <h4>
+        
+        Question 1 : <br>
+        
+        Write a JavaScript program to display the current day and time in the following format.<br>
+        
+        Sample Output : <br>
+        
+        <br>
+        
+        Today is : Tuesday.<br>
+        
+        Current time is : 10 PM : 30 : 38
+        
+        </h4    >
+
+        <h2>
+            Answer:
+        </h2>
+
+    </head>
+
+    <body>
+        <p id="demo"></p>
+
+        <script>
+
+            var dateFormat = require('dateformat');
+
+            var now = new Date();
+
+         
+        
+            document.getElementById("demo").innerHTML = "Today is :" + dateFormat(now, "dddd");
+
+        </script>
+
+
+    </body>
+
+
+</html>
