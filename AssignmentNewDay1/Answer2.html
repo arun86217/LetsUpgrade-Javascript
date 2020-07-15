@@ -1,0 +1,52 @@
+<html>
+
+<body>
+
+
+    <ul>
+        <li><code>var</code> declarations are globally scoped or function scoped while <code>let</code> and <code>const</code> are block scoped.</li>
+        <li><code>var</code> variables can be updated and re-declared within its scope; <code>let</code> variables can be updated but not re-declared; <code>const</code> variables can neither be updated nor re-declared.</li>
+        <li>They are all hoisted to the top of their scope. But while <code>var</code> variables are initialized with <code>undefined</code>, <code>let</code> and <code>const</code> variables are not initialized.</li><li>While <code>var</code> and <code>let</code> can be declared without being initialized, <code>const</code> must be initialized during declaration.</li>
+    </ul>
+
+        An example of trying to redeclare a let variable:
+            // In editor:
+            <!-- <script
+            let points = 50;
+            let points = 60;
+            /script>
+            // In the console I get an error:
+            Uncaught SyntaxError: Identifier 'points' has already been declared
+
+            how can i update it
+            let points = 50;
+            points = 60;
+            // In console:
+            points
+            // Returns:
+            60
+
+            let and var can be reassigned to a new value while const cannot be reassigned.
+            var a = 10;
+            a = 20;
+            //output: 20
+            console.log(a);
+
+            let b = 'hello';
+            b = 'world';
+            //output: 'world'   
+            console.log(b);
+
+            const c = 'hello'
+            //Error: Uncaught TypeError: Assignment to constant variable.
+            c = 'world' -->
+
+
+
+</body>
+
+
+
+
+
+</html>
