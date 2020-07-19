@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Calculator for 2 NUMBERS</h1>
+        <table border="1" width=65% cell-spacing="2" cell-spading="2">
+            <tr>
+                <td>Enter first number:
+                </td>
+                <td><input type="text" id='numer1'>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter first number:
+                </td>
+                <td><input type="text" id='numbmer2' >
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <script src="Scripts\Calculator.js">  </script>                   
+                        <button id="addition"  onclick="add()" > addition </button>
+                        <button id="substraction"  onclick="sub()">substraction</button>
+                        <button id="multiplication"  onclick="mul()">multiplication</button>
+                        <button id="division"  onclick="div()">division</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Result of the Operation:</td>
+                <td><p id='demo'></p>
+                </td>
+            </tr>
+        </table>       
+    </body>
+</html>
