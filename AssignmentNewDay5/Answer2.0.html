@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <Script defer src="Answer2.0.js"></Script>
+    </head>
+
+    <body> 
+        <h1>Select Your role</h1>   
+            <h1>Users region</h1>
+            <p>enter name: <input type="text" id="addusername"></p>
+            <p>enter age: <input type="text" id="adduserage"></p>
+            <p>enter email: <input type="text" id="adduseremail"></p>
+            <button name="User" id="adduser" onclick="addUser()" >add me as User</button>
+
+            <p>enter email: <input type="text" id="disuser"></p>
+            <button name="User" id="disuser" onclick="showDetails()" >display user details</button>
+            <p id="showdetails"></p>
+            <h1>moderator region</h1>   
+            <p>enter (user-email): <input type="text"  id="Moduser">addcoins</p>
+            <p>enter (coins): <input type="number"  id="addcoins"><button  onclick="AddCoins()" >addcoins</button></p>
+            <p>enter (coins): <input type="number"  id="subcoins"><button  onclick="subCoins()" >subcoins</button></p>
+            <p id="coins"></p>
+
+            <h1>Admin region</h1>   
+
+            <p>enter email: <input type="text" id="moduser"></p>
+            <p>enter course for addition: <input type="text" id="addco"><button  onclick="AddCourse()" >AddCourse</button></p>
+            <p>enter course for deletion: <input type="text" id="delco"><button  onclick="SubCourse()" >SubCourse</button></p>         
+            <p id="course"></p>
+            <button name="Admin"onclick="Admin()">Admin</button>     
+    </body>
+
+
+</html>
