@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>StopWatch Window</title>
+        <script  defer src="Q2.js"></script>
+    </head>
+
+    <body>
+        <table align="center" width=100% >
+            <tr>
+                <td><p>HH:MM:SS</p></td>
+            </tr>
+            <tr>
+                <td><p id="sw">00:00:00</p> </td>
+            </tr>
+        </table>
+       
+        <br>
+        <br>
+
+        <table width=100%>
+            <tr>
+                <td><p><button type="button" onclick="programStarter()"> StopWatch Start</button></p></td>
+                <td><p><button type="button" onclick="ClockPause()" > StopWatch Pause/Resume</button></p></td>
+                <td><p><button type="button" onclick="ClockReset()" > StopWatch Reset</button></p></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table align="center" width=100%>
+            <tr>
+                <td>hh :<input type="number" id="h" min="0" max="23">
+                    mm :<input type="number" id="m" min="0" max="59">
+                    ss :<input type="number" id="s" min="0" max="59">
+                    <button onclick="set()">Set timer</button>
+                    <button onclick="resetTimer()">Reset timer</button></td>
+                    <br>
+            <div><p id='out1'></p></div>
+            </tr>
+        </table>
+    </body>
+</html>
